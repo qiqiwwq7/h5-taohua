@@ -1,0 +1,116 @@
+/* 桃花枝 */
+.animated-th {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite; 
+}
+.animation-th-1 {
+    animation-name:upAnimation-1; 
+    transform-origin: left top;
+}
+.animation-th-2 {
+    animation-name:upAnimation-2; 
+    transform-origin: left top;
+}
+.animation-th-3 {
+    animation-name:upAnimation-3; 
+    transform-origin: right top;
+}
+.animation-th-4 {
+    animation-name:upAnimation-4; 
+    transform-origin: right bottom;
+}
+@keyframes upAnimation-1{ 
+    0% {transform: rotate(-10deg);}
+    50% {transform: rotate(0deg);}
+    100% {transform: rotate(-10deg);}
+  }
+@keyframes upAnimation-2{ 
+    0% {transform: rotate(10deg);}
+    50% {transform: rotate(0deg);}
+    100% {transform: rotate(10deg);}
+  }
+@keyframes upAnimation-3{ 
+    0% {transform: rotate(5deg);}
+    50% {transform: rotate(0deg);}
+    100% {transform: rotate(5deg);}
+  }
+  @keyframes upAnimation-4{ 
+    0% {transform: rotate(5deg);}
+    50% {transform: rotate(0deg);}
+    100% {transform: rotate(5deg);}
+  }
+  /* 图片 */
+.animation-th-text {
+    animation-duration: 5s;
+    animation-fill-mode: both; 
+    animation-iteration-count: infinite; 
+    transform-origin: center;
+} 
+.animationText1 {
+    animation-name:upAnimation-text1; 
+}
+.animationText2 {
+    animation-name:upAnimation-text2; 
+}
+.animationText3 {
+    margin: 12% 11%;
+    transform-origin: center;
+    animation-name:upAnimation-text3; 
+}
+.animationText4 {
+    margin: 12% 11%;
+    transform-origin: center;
+    animation-name:upAnimation-text4; 
+}
+.animationText5 {
+    animation-name:upAnimation-text5; 
+}
+@keyframes upAnimation-text1 {
+    0% {transform: translate(-50%, -50%);opacity: 0;}
+    30% {transform: translate(12%, 10%);opacity: 1;}
+    80% {transform: translate(12%, 10%);opacity: 1;}
+    100% {transform: translate(50%, 50%);opacity: 0;}
+}
+@keyframes upAnimation-text2 {
+    0% {transform: translate(50%, 10%);opacity: 0;}
+    30% {transform: translate(12%, 10%);opacity: 1;}
+    80% {transform: translate(12%, 10%);opacity: 1;}
+    100% {transform: translate(-50%, 10%);opacity: 0;}
+}
+@keyframes upAnimation-text3 {
+    0%  {transform: scale3d(0.3, 0.3, 0.3);opacity: 0;}
+    30% {transform: scale3d(1, 1, 1);opacity: 1;}
+    80% {transform: scale3d(1, 1, 1);opacity: 1;}
+    100% {transform: scale3d(0.3, 0.3, 0.3);opacity: 0;}
+}
+@keyframes upAnimation-text4 {
+    0% {transform: rotate3d(0, 0, 1, -200deg);opacity: 0;}
+    30% {transform: translate3d(0, 0, 0);opacity: 1;}
+    80% {transform: translate3d(0, 0, 0);opacity: 1;}
+    100% {transform: rotate3d(0, 0, 1, 400deg);opacity: 0;}
+}
+@keyframes upAnimation-text5 {
+    0% {transform: translate(50%, -10%);opacity: 0;}
+    30% {transform: translate(12%, 10%);opacity: 1;}
+    80% {transform: translate(12%, 10%);opacity: 1;}
+    100% {transform: translate(-50%, 10%);opacity: 0;}
+}
+/* 花瓣 */
+.snowRoll { 
+	position: absolute; 
+	opacity: 0; 
+	animation-name: mysnow; 
+	animation-duration: 20s; 
+	height: 80px; 
+}
+@-webkit-keyframes mysnow {  
+	0% {bottom: 100%;}
+	50% {transform: rotate(1080deg);}
+	100% {transform: rotate(0deg) translate3d(50px, 50px, 50px);}
+}
+@-moz-keyframes mysnow {  
+	0% {bottom: 100%;}
+	50% {transform: rotate(1080deg);}
+	100% {transform: rotate(0deg) translate3d(50px, 50px, 50px);}
+}
